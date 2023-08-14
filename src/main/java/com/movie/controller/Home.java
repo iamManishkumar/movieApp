@@ -91,6 +91,11 @@ public class Home {
         }
         return new ModelAndView(new RedirectView("/error"));
     }
+
+
+    public void surajmethod(){
+        System.out.println("for checking purpose");
+    }
 }
 
 
