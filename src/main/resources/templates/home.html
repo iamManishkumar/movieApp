@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+<body>
+<h1>Movie Rating and Genre Search</h1>
+
+<!-- Form for movie rating search -->
+<form action="#" th:action="@{/movies}" method="get">
+    <label for="movieName">Enter Movie Name:</label>
+    <input type="text" id="movieName" name="movieName">
+    <button type="submit">Search Movie Rating</button>
+</form>
+
+<!-- Form for movie genre search -->
+<form action="#" th:action="@{/movies/genre}" method="get">
+    <label for="genre">Enter Genre:</label>
+    <input type="text" id="genre" name="genre">
+    <button type="submit">Search Movies by Genre</button>
+</form>
+
+<h2>Add Movie</h2>
+<form action="/movies/add" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" name="rating" step="0.1" required><br>
+
+    <button type="submit">Add Movie</button>
+</form>
+
+<form action="#" th:action="@{/movies/display}" method="get">
+    <button type="submit">Search Movie Rating</button>
+</form>
+
+
+<form action="#" th:action="@{/movies/trailer}" method="get">
+    <label for="movieName">Enter Movie Name:</label>
+    <input type="text" id="movieNamee" name="movieNamee">
+    <button type="submit">Search Trailer</button>
+</form>
+
+</body>
+</html>
