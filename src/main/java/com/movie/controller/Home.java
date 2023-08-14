@@ -81,6 +81,7 @@ public class Home {
         model.addAttribute("moviesList", moviesList);
         return "movies";
     }
+
     @GetMapping("/trailer")
     public ModelAndView getMovieTrailer(@RequestParam(name = "movieNamee", required = false) String movieNamee) throws UnsupportedEncodingException {
         if (movieNamee != null) {
@@ -91,15 +92,8 @@ public class Home {
         }
         return new ModelAndView(new RedirectView("/error"));
     }
-
-
-    public void surajmethod(){
-        System.out.println("for checking purpose");
-    }
-    public void manishethod(){
-        System.out.println("Manish method");
-    }
 }
+
 
 
 
