@@ -96,6 +96,9 @@ public class Home {
     public void surajmethod(){
         System.out.println("for checking purpose");
     }
+    public void manishethod(){
+        System.out.println("Manish method");
+    }
 }
 
 
